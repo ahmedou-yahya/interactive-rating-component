@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap');
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsla(216, 12%, 54%, 0.205);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: var(--veryDarkBlue);
+    font-family: 'Overpass', sans-serif;;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--darkBlue);
+    border-radius: 15px;
+    width: 300px;
+    padding: 1.9rem;
+}
+
+.circle-icon {
+    background-color: var(--mediumGrey);
+    padding: 1rem;
+    border-radius: 50%;
+}
+h1 {
+    color: var(--white);
+}
+
+p {
+    color: var(--lightGrey);
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.circle {
+    color: var(--lightGrey);
+    height: 50px;
+    width: 50px;
+    background: var(--mediumGrey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover{
+    background-color: var(--lightGrey);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.circle:active {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 2rem;
+    width: 90%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 40px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thank-you {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    background-color: var(--mediumGrey);
+    border-radius: 20px;
+    color: var(--orange);
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+}
+
+.selected {
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
+
+.drop {
+    animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(--order)*100ms);
+}
+
+@keyframes dropIn {
+    from { transform: translateY(-500px);}
+    to { transform: translateY(0);}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./assets/icon-star.svg">
+</head>
+<body>
+  <div class="card">
+    <div class="evaluation">
+        <span>
+            <img src="./assets/icon-star.svg" class="circle-icon">
+        </span>
+        <h1>How did you do?</h1>
+        <p>Please let us know how we did with your support request.
+            All feedback is appreciated to help us improve our offering!
+        </p>
+        <div class="circles">
+            <div class="circle drop" style="--order: 1">1</div>
+            <div class="circle drop" style="--order: 2">2</div>
+            <div class="circle drop" style="--order: 3">3</div>
+            <div class="circle drop" style="--order: 4">4</div>
+            <div class="circle drop" style="--order: 5">5</div>
+        </div>
+        <button id="btn">SUBMIT</button>
+    </div>
+    <div class="thank-you">
+        <span>
+            <img src="assets/illustration-thank-you.svg">
+        </span>
+        <div class="rating">
+            You selected <span id="rating"></span> out of 5
+        </div>
+        <h1>Thank you!</h1>
+        <p>
+            We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </p>
+    </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
